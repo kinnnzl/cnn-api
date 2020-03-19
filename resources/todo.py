@@ -3,7 +3,7 @@ from flask import jsonify, make_response, json, request
 from flask_restful import Resource
 import matplotlib.pyplot as plt
 import numpy as np
-# import cv2
+import cv2
 
 
 class CNN(Resource):
@@ -13,7 +13,7 @@ class CNN(Resource):
         img = base64.b64decode(encoded_image)
         npimg = np.fromstring(img, dtype=np.uint8)
         print(npimg)
-        # source = cv2.imdecode(npimg, 1)
+        source = cv2.imdecode(npimg, 1)
 
         # face_cascade = cv2.CascadeClassifier('https://github.com/kinnnzl/cnn-api/blob/master/resources'
         #                                      '/haarcascade_frontalface_alt.xml')

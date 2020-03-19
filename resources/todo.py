@@ -7,8 +7,9 @@ import cv2
 
 
 class CNN(Resource):
-    def post(self):
-        r = json.dumps(request.get_json(silent=True))
+    def get(self):
+        # r = json.dumps(request.get_json(silent=True))
+        r = request.get_data()
         encoded_image = r.split(",")[1]
         img = base64.b64decode(encoded_image)
         npimg = np.fromstring(img, dtype=np.uint8)

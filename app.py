@@ -6,7 +6,7 @@ from resources.todo import CNN
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(CNN, "/cnn/<int:id>")
+api.add_resource(CNN, "/cnn/")
 
 if __name__ == "__main__":
   app.run()

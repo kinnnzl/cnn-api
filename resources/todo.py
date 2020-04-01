@@ -1,10 +1,6 @@
 import base64
 from flask import jsonify, make_response, json, request
 from flask_restful import Resource
-import matplotlib.pyplot as plt
-import numpy as np
-import cv2
-import glob
 import numpy as np
 
 

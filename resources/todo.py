@@ -46,11 +46,11 @@ class CNN(Resource):
 
         # ========================================== IMAGE SIZE ==========================================
 
-        width = 80
-        height = 80
-        n_classes = 5
-        n_epochs = 50
-        dropout_rate = 0.2
+        # width = 80
+        # height = 80
+        # n_classes = 5
+        # n_epochs = 50
+        # dropout_rate = 0.2
 
         # ========================================= TRAIN IMAGE ==========================================
         # images_train = []

@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 from flask import Flask, jsonify
+from flask_restful import Resource
 
 
 class GetMovies(Resource):

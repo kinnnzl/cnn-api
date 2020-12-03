@@ -6,8 +6,8 @@ from flask_restful import Resource
 
 class GetMovies(Resource):
     def post(self):
-        ratings = pd.read_csv('ratings.csv')
-        movies = pd.read_csv('movies.csv')
+        ratings = pd.read_csv('../ratings.csv')
+        movies = pd.read_csv('../movies.csv')
         ratings = pd.merge(movies, ratings).drop(['genres', 'timestamp'], axis=1)
         print(ratings.shape)
 

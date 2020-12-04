@@ -5,11 +5,12 @@ from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/get_movies": {"origins": "*"}})
+app.config['CORS_HEADERS'] = 'Content-Type'
+cors = CORS(app, resources={r"/get_movies": {"origins": "http://localhost:4200"}})
 
 
 @app.route('/get_movies/', methods=['GET'])
-@cross_origin(origin='*', headers=['access-control-allow-origin', 'Content-Type'])
+@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def get_movies():
     ratings = pd.read_csv('ratings.csv')
     movies = pd.read_csv('movies.csv')

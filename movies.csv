@@ -12,7 +12,7 @@ movieId,title,genres
 11,FRIEND ZONE,ThaiComedy|Comedy|Romance
 12,Jom-Kamang-Weth,ThaiComedy
 13,LADDA LAND (2011),ThaiComedy
-14,Crazy Crying Lady,ThaiComedy
+14,Mr. Ho,ThaiComedy
 15,LuangPeeJazz 5G,ThaiComedy
 16,CRAZY RICH ASIANS,Comedy
 17,NIGHT SCHOOL,Comedy
@@ -20,7 +20,7 @@ movieId,title,genres
 19,MR.BEAN'S HOLIDAY,Comedy|Children and family
 20,0.0 Mhz,Asia
 21,HIGH & LOW The Movie,Asia
-22,ALONG WITH THE GODS : THE TWO WORLDS,Asia
+22,ALONG WITH THE GODS - THE TWO WORLDS,Asia
 23,THE DRUG KING,Asia
 24,HIGH & LOW,Asia
 25,APOLLO 13,Award
@@ -31,7 +31,7 @@ movieId,title,genres
 30,READY PLAYER ONE,Sci-Fi
 31,BIRD BOX,Sci-Fi
 32,PACIFIC RIM,Sci-Fi
-34,JURASSIC WORLD: FALLEN KINGDOM,Sci-Fi
+34,JURASSIC WORLD - FALLEN KINGDOM,Sci-Fi
 36,RAMPAGE,Sci-Fi
 38,THE GREEN MILE,Drama
 39,12 STRONG,Drama
@@ -44,9 +44,9 @@ movieId,title,genres
 46,KIKI'S DELIVERY SERVICE,Children and family|Anime
 47,SECRETS OF THE SAQQARA TOMB,History|Science and nature
 48,Bad Boy Billionaires,History
-49,RISE OF EMPIRES: OTTOMAN,History
+49,RISE OF EMPIRES - OTTOMAN,History
 50,MEDAL OF HONOR,History
-52,CHALLENGER: THE FINAL FLIGHT,History
+52,CHALLENGER - THE FINAL FLIGHT,History
 53,LEAVE NO TRACE,Indy
 54,THE LAST DAYS OF AMERICAN CRIME,Indy
 55,AMATEUR,Indy
@@ -72,7 +72,7 @@ movieId,title,genres
 78,High Score,Science and nature
 79,NIGHT ON EARTH,Science and nature
 80,EXHIBIT A,Science and nature
-81,Inside Bill's Brain: Decoding Bill Gates,Science and nature
+81,Inside Bill's Brain - Decoding Bill Gates,Science and nature
 82,THE SHINING,Horror
 83,TRAIN TO BUSAN,Horror
 85,IT,Horror
@@ -93,7 +93,7 @@ movieId,title,genres
 103,THE BOURNE IDENTITY ,Crime
 104,JOHN WICK,Crime
 105,DOOMSDAY,Action
-106,THE PURGE: ANARCHY,Action
+106,THE PURGE - ANARCHY,Action
 107,THE MUMMY RETURNS,Action
 108,CAST AWAY,Action
 110,THE OLD GUARD,Action

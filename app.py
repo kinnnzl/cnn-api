@@ -1,9 +1,10 @@
-# app.py
+#import module
 import pandas as pd
 import json
 from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
 
+#create object flask and config cors
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app, resources={r"/get_movies": {"origins": "http://localhost:4200"}})
@@ -12,17 +13,24 @@ cors = CORS(app, resources={r"/get_movies": {"origins": "http://localhost:4200"}
 @app.route('/get_movies/', methods=['GET'])
 @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def get_movies():
+     # Read data in csv
     ratings = pd.read_csv('ratings.csv')
     movies = pd.read_csv('movies.csv')
+    
+    # Join DataFrame & Drop column genres and timestamp
     ratings = pd.merge(movies, ratings).drop(['genres', 'timestamp'], axis=1)
     print(ratings.shape)
-
+    
+    # Pivot dataset 
     user_ratings = ratings.pivot_table(index=['userId'], columns=['title'], values='rating')
     user_ratings.head()
     print("Before: ", user_ratings.shape)
+    
+    # Drop movies which less than 10 user who rated it (fill 0)
     user_ratings = user_ratings.dropna(thresh=10, axis=1).fillna(0, axis=1)
     print("After: ", user_ratings.shape)
 
+    # Build similarity matrix
     corr_matrix = user_ratings.corr(method='pearson')
     # print(corr_matrix.sum().sort_values(ascending=False))
 
